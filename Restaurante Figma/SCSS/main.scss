@@ -1,0 +1,16 @@
+@use 'variables';
+@use 'header';
+@use 'footer';
+@use 'mobile';
+@use 'inicio';
+@use 'sitio';
+@use 'carta';
+@use 'reserva';
+
+body {
+    font-family: variables.$primaryFont;
+    margin: 0;
+    padding: 0;
+    background-color: variables.$lightColor;
+    color: variables.$darkColor;
+}

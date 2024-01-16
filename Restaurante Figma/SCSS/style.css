@@ -1,0 +1,315 @@
+@charset "UTF-8";
+header {
+  background-color: #151D1E;
+  color: #f7fff7;
+  text-align: center;
+  padding: 0.2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+header #logo {
+  height: 125px;
+  margin-right: 20px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+header nav ul li {
+  margin-right: 60px;
+  margin-bottom: 10px;
+}
+header nav ul li:nth-child(n+2) {
+  background-color: #353C3D;
+  padding: 15px 30px;
+  margin-right: 30px;
+  min-width: 120px;
+}
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+header nav ul li a {
+  display: flex;
+  align-items: center;
+  color: #f7fff7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+header nav ul li a img {
+  height: 20px;
+  margin-right: 8px;
+}
+header nav ul li a:hover {
+  color: #4ecdc4;
+}
+
+footer {
+  background-color: #151D1E;
+  color: #f7fff7;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header #logo {
+    margin: 0;
+  }
+  header .logo-title {
+    display: none;
+  }
+  header nav {
+    width: 80%;
+  }
+  header nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 0;
+  }
+  header nav ul li:nth-child(n+2) {
+    padding: 15px;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+}
+.content-layout {
+  display: flex;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .content-layout {
+    flex-direction: column;
+  }
+}
+.content-layout .image-area {
+  width: 50%;
+  background: url("../images/restaurante.PNG") no-repeat center center;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .content-layout .image-area {
+    width: 100%;
+    height: 70vh;
+  }
+}
+.content-layout .text-area {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7fff7;
+}
+@media (max-width: 768px) {
+  .content-layout .text-area {
+    width: 100%;
+    height: auto;
+  }
+}
+.content-layout .text-area .text-container {
+  max-width: 80%;
+}
+.content-layout .text-area .text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.content-layout .text-area .text-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.content-layout-sitio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .content-layout-sitio {
+    flex-direction: column;
+  }
+}
+.content-layout-sitio .text-area {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7fff7;
+}
+@media (max-width: 768px) {
+  .content-layout-sitio .text-area {
+    width: 100%;
+    height: auto;
+  }
+}
+.content-layout-sitio .text-area .text-container {
+  max-width: 80%;
+}
+.content-layout-sitio .text-area .text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.content-layout-sitio .text-area .text-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.content-layout {
+  display: flex;
+  justify-content: space-between;
+}
+.content-layout .menu-column {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.content-layout .menu-column .image-area {
+  width: 100%;
+  height: 450px;
+  background: url("../images/menu-adulto.png") no-repeat center center;
+  background-color: #f7fff7;
+  background-size: cover;
+  background-position: center;
+}
+.content-layout .menu-column .image-area2 {
+  width: 100%;
+  height: 450px;
+  background: url("../images/menu-niño.png") no-repeat center center;
+  background-color: #f7fff7;
+  background-size: cover;
+  background-position: center;
+}
+.content-layout .menu-column .text-container {
+  text-align: center;
+}
+.content-layout .menu-column .text-container h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.content-layout .menu-column .text-container p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reservation-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.reservation-form-container h2 {
+  margin-bottom: 2rem;
+}
+.reservation-form-container .form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.reservation-form-container .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.reservation-form-container .form-group input[type=email],
+.reservation-form-container .form-group input[type=datetime-local],
+.reservation-form-container .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.reservation-form-container .form-group textarea {
+  height: 150px;
+}
+.reservation-form-container .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.reservation-form-container .form-buttons button {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f7fff7;
+  margin-bottom: 1rem;
+}
+.reservation-form-container .form-buttons button.reset-button {
+  display: flex;
+  align-items: center;
+}
+.reservation-form-container .form-buttons button.reset-button:after {
+  content: url("../images/ICONO CANCELAR.png");
+  margin-left: 0.5rem;
+}
+.reservation-form-container .form-buttons button.send-button {
+  display: flex;
+  align-items: center;
+}
+.reservation-form-container .form-buttons button.send-button:after {
+  content: url("../images/ICONO ENVIAR.png");
+  margin-left: 0.5rem;
+}
+
+.image-area {
+  background: url("../images/reserva-img.png") no-repeat center center;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .image-area {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation-form-container {
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+  .form-buttons {
+    flex-direction: wrap;
+  }
+  .form-buttons button {
+    width: 50%;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+body {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #f7fff7;
+  color: #1a535c;
+}
+
+/*# sourceMappingURL=style.css.map */

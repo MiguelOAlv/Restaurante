@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Figma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SCSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo del Restaurante" id="logo">
+        </div>
+        <nav>
+            <ul>
+                <li class="logo-title"><a>RESTAURANTE FIGMA</a></li>
+                <li><a href="inicio.html"><img src="images/inicio.png" alt="Inicio">Inicio</a></li>
+                <li><a href="sitio.html"><img src="images/sitio.png" alt="Sitio">Sitio</a></li>
+                <li><a href="carta.html"><img src="images/carta.png" alt="Carta">Carta</a></li>
+                <li><a href="reserva.html"><img src="images/reserva.png" alt="Reserva">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="reservation-form-container">
+    <h2>FORMULARIO DE RESERVA</h2>
+    <form class="reservation-form">
+        <div class="form-group">
+            <label for="email">DIRECCIÓN DE CORREO:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+        </div>
+        <div class="form-group">
+            <label for="date">FECHA / MES / DÍA / HORA:</label>
+            <input type="datetime-local" id="date" name="date">
+        </div>
+        <div class="form-group">
+            <label for="message">MENSAJE:</label>
+            <textarea id="message" name="message" placeholder="Tu mensaje"></textarea>
+        </div>
+        <div class="form-buttons">
+            <button type="reset" class="reset-button">CANCELAR</button>
+            <button type="submit" class="send-button">ENVIAR</button>
+        </div>
+    </form>
+    <div class="image-area">
+    </div>
+</div>
+
+<footer>
+    <p>© 2023 Restaurante Figma</p>
+</footer>
+</body>
+
+</html>
